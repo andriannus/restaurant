@@ -11,9 +11,23 @@
     <x-spacer></x-spacer>
 
     <ul class="AppBar-actions">
-      <li class="AppBar-action">Home</li>
-      <li class="AppBar-action">Favorite</li>
-      <li class="AppBar-action">About</li>
+      <li class="AppBar-action">
+        <router-link to="/">Home</router-link>
+      </li>
+
+      <li class="AppBar-action">
+        <router-link to="/">Favorite</router-link>
+      </li>
+
+      <li class="AppBar-action">
+        <a
+          href="https://andriannus.id"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          About
+        </a>
+      </li>
     </ul>
   </nav>
 
@@ -29,7 +43,7 @@
         Favorite
       </li>
 
-      <li class="BottomDrawer-action">
+      <li class="BottomDrawer-action" @click="openPersonalWeb">
         <x-icon class="BottomDrawer-icon" icon="info-circle" size="lg"></x-icon>
         About
       </li>

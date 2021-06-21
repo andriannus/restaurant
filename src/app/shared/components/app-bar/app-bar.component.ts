@@ -46,6 +46,10 @@ export default defineComponent({
       state.isBottomSheetShown = !state.isBottomSheetShown;
     }
 
-    return { state, toggleBottomSheet };
+    function openPersonalWeb(): void {
+      window.open("https://andriannus.id", "_blank", "noopener noreferrer");
+    }
+
+    return { openPersonalWeb, state, toggleBottomSheet };
   },
 });
