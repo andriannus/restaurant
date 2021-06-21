@@ -1,1 +1,1 @@
-export { default as Spacer } from "./spacer.component.vue";
+export { default as XSpacer } from "./spacer.component.vue";
