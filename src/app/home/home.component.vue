@@ -1,7 +1,7 @@
 <template>
   <x-hero></x-hero>
 
-  <div class="Container">
+  <div id="MainContent" class="Container">
     <h2 class="Headline-2 TextAlign-center">Explore Restaurant</h2>
 
     <div class="Grids">

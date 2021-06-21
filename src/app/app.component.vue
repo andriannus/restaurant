@@ -1,5 +1,9 @@
 <template>
-  <x-app-bar></x-app-bar>
+  <a href="#MainContent" class="SkipLink">Menuju ke konten</a>
+
+  <header>
+    <x-app-bar></x-app-bar>
+  </header>
 
   <main class="Main">
     <router-view></router-view>
