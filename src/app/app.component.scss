@@ -12,6 +12,25 @@ ul {
   margin: 0;
 }
 
+a {
+  color: #ffffff;
+
+  &:hover {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+nav li {
+  &::before {
+    content: none;
+  }
+}
+
 .is-clipped {
   overflow: hidden;
 }
@@ -62,6 +81,7 @@ ul {
 
 .Headline {
   &-2 {
+    color: #000000;
     font-size: 24px;
     font-weight: 400;
     line-height: 24px;
@@ -69,6 +89,7 @@ ul {
   }
 
   &-3 {
+    color: #000000;
     font-size: 20px;
     font-weight: 500;
     line-height: 32px;
