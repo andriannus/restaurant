@@ -1,5 +1,5 @@
 <template>
-  <nav class="AppBar">
+  <header class="AppBar">
     <button class="AppBar-button" @click="toggleBottomSheet">
       <span class="AppBar-icon">
         <x-icon icon="bars"></x-icon>
@@ -10,26 +10,28 @@
 
     <x-spacer></x-spacer>
 
-    <ul class="AppBar-actions">
-      <li class="AppBar-action">
-        <router-link to="/">Home</router-link>
-      </li>
+    <nav>
+      <ul class="AppBar-actions">
+        <li class="AppBar-action">
+          <router-link to="/">Home</router-link>
+        </li>
 
-      <li class="AppBar-action">
-        <router-link to="/">Favorite</router-link>
-      </li>
+        <li class="AppBar-action">
+          <router-link to="/">Favorite</router-link>
+        </li>
 
-      <li class="AppBar-action">
-        <a
-          href="https://andriannus.id"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          About
-        </a>
-      </li>
-    </ul>
-  </nav>
+        <li class="AppBar-action">
+          <a
+            href="https://andriannus.id"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            About
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
   <x-bottom-sheet v-model="state.isBottomSheetShown" dismissible>
     <ul class="BottomDrawer">
