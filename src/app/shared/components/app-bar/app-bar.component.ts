@@ -1,11 +1,25 @@
-import { defineComponent } from "vue";
+import { defineComponent, reactive } from "vue";
 
-import { Spacer } from "@/app/shared/components/spacer";
+import { XBottomSheet } from "@/app/shared/components/bottom-sheet";
+import { XSpacer } from "@/app/shared/components/spacer";
 
 export default defineComponent({
   name: "AppBarComponent",
 
   components: {
-    Spacer,
+    XBottomSheet,
+    XSpacer,
+  },
+
+  setup() {
+    const state = reactive({
+      isBottomSheetShown: false,
+    });
+
+    function toggleBottomSheet(): void {
+      state.isBottomSheetShown = !state.isBottomSheetShown;
+    }
+
+    return { state, toggleBottomSheet };
   },
 });
