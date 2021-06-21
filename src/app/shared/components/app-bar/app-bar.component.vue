@@ -1,7 +1,9 @@
 <template>
   <nav class="AppBar">
     <button class="AppBar-button" @click="toggleBottomSheet">
-      <span class="AppBar-icon">=</span>
+      <span class="AppBar-icon">
+        <x-icon icon="bars"></x-icon>
+      </span>
     </button>
 
     <p class="AppBar-title">We The Food</p>
@@ -17,9 +19,20 @@
 
   <x-bottom-sheet v-model="state.isBottomSheetShown" dismissible>
     <ul class="BottomDrawer">
-      <li class="BottomDrawer-action">Home</li>
-      <li class="BottomDrawer-action">Favorite</li>
-      <li class="BottomDrawer-action">About</li>
+      <li class="BottomDrawer-action">
+        <x-icon class="BottomDrawer-icon" icon="home" size="lg"></x-icon>
+        Home
+      </li>
+
+      <li class="BottomDrawer-action">
+        <x-icon class="BottomDrawer-icon" icon="heart" size="lg"></x-icon>
+        Favorite
+      </li>
+
+      <li class="BottomDrawer-action">
+        <x-icon class="BottomDrawer-icon" icon="info-circle" size="lg"></x-icon>
+        About
+      </li>
     </ul>
   </x-bottom-sheet>
 </template>
