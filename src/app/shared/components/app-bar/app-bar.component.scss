@@ -41,11 +41,8 @@
         background: #ea1505;
       }
 
+      &:focus,
       &:hover {
-        background: #fb665b;
-      }
-
-      &:focus {
         background: #fb665b;
       }
     }
