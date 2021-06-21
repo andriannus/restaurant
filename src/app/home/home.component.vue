@@ -9,6 +9,9 @@
         v-for="(restaurant, index) of RESTAURANTS"
         :key="index"
         class="Grid"
+        hover
+        link
+        to="/"
       >
         <template #media>
           <img
